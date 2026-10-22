@@ -1,0 +1,36 @@
+.states
+.web
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Reflex build output and local state
+.web/
+.states/
+assets/external/
+*.db
+reflex.db
+
+# Tooling and OS
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# Local environment files
+.env
+.env.*

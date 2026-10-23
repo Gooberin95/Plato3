@@ -34,3 +34,9 @@ reflex.db
 # Local environment files
 .env
 .env.*
+
+# Frontend tooling, if it lands at the repo root
+node_modules/
+
+# CI output. The workflow rebuilds this directory.
+deploy-package/

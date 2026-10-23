@@ -62,3 +62,7 @@ Reflex also starts an API on port 8000. The site itself is the frontend on port 
 - `/band` — Ada Voss, Remy Cho, Noah Pell, and Ivo Maren
 
 The mailing list checks the name, email, optional city, and record choice in Reflex state. A valid signup stays in that browser session. Refreshing the page clears it.
+
+## Deploying to Azure
+
+The GitHub Actions workflow builds this site on every push to `main`. Deploying to Azure App Service (Linux, the built-in Python 3.14 runtime, no Docker) is described in [DEPLOY.md](DEPLOY.md). The staging and production jobs stay skipped until the repository variable `AZURE_DEPLOY_ENABLED` is `true`.
